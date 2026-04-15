@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Information System</h1>
+
+      <section>
+        <h2>Add Student</h2>
+        <form id="studentForm">
+          <input
+            type="text"
+            id="first_name"
+            placeholder="First Name"
+            required />
+          <input type="text" id="last_name" placeholder="Last Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <button type="submit">Add Student</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>All Students</h2>
+        <button id="loadStudents">Load Students</button>
+        <ul id="studentList"></ul>
+      </section>
+
+      <section>
+        <h2>Student Report</h2>
+        <button id="loadReport">Load Report</button>
+        <ul id="reportList"></ul>
+      </section>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
